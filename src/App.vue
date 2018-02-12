@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img src="./assets/vumc_small.jpg"><br>
+    <router-link :to="{name: 'home'}">Home</router-link>
+    <router-link :to="{name: 'insulin-carb'}">Insulin/Carb Calculator</router-link>
+    <router-link :to="{name: 'insulin-sliding-scale'}">Sliding Scale</router-link>
+    <router-view></router-view>
+    <footer>&copy;2018 VUMC</footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
